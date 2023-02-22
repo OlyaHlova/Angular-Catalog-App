@@ -1,0 +1,32 @@
+.custom {
+
+  &-content {
+    font-family: Arial, "Proxima Nova Black";
+    font-weight: normal;
+    font-size: 1rem;
+    max-width: 1068px;
+    margin: auto;
+    padding-top: 8px;
+    width: 100%;
+    color: dimgray;
+  }
+
+  &-title {
+    font-family: "Proxima Nova Black";
+    font-size: 1.5rem;
+    color: grey;
+    display: flex;
+    justify-content: center;
+
+    &-name {
+      color: crimson;
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: cadetblue;
+}

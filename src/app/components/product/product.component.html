@@ -1,0 +1,26 @@
+<!--<div class="product-card">-->
+<!--  <div class="product-title">Product</div>-->
+<!--  <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure libero necessitatibus, quam reprehenderit tenetur vero.</p>-->
+<!--</div>-->
+
+<div class="product-card">
+  <img [src]="product.image" [alt]="product.title" class="product-card-img">
+  <div class="product-title">{{product.title}}</div>
+  <p>Price: <span [ngStyle]="{fontWeight: 'bold'}"> {{ product.price | currency: 'UAH' }} </span></p>
+
+  <button
+    class="custom-btn"
+    [ngClass]="{
+      'custom-btn-show': !details,
+      'custom-btn-hide': details
+    }"
+    (click)="details = !details"
+  >
+    {{ details ? 'Hide' : 'Show' }} Details
+  </button>
+
+  <div *ngIf="details">
+    <p>{{ product.description | slice:0:350}}</p>
+    <p>Rate: <span class="font-bold"> {{ product.rating.rate | number:'1.2-4' }} </span></p>
+  </div>
+</div>

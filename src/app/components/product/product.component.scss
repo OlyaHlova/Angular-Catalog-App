@@ -1,0 +1,51 @@
+.product {
+  &-card {
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+    &-img {
+      width: 16%;
+      margin: 0 auto 16px;
+    }
+  }
+
+  &-title {
+    font-weight: bold;
+  }
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+p {
+  margin: 6px 0px;
+}
+
+.custom-btn {
+  width: 150px;
+  max-width: 50%;
+  min-height: 36px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  color: black;
+  background-color: gold;
+  font-size: 1rem;
+  margin: 12px auto;
+
+  &-show {
+    color: black;
+    background-color: gold;
+  }
+
+  &-hide {
+    color: white;
+    background-color: cornflowerblue;
+  }
+}
